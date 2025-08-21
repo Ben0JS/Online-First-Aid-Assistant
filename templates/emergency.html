@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Page - First Aid Assistant</title>
+    <link rel="stylesheet" href="/static/css/emergency.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Vencher's First Aid Assistant</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="emergency-container">
+        <h2>Why First Aid is Important</h2>
+        <div class="firstaid-list">
+            <div class="firstaid-item">Respond quickly in emergencies</div>
+            <div class="firstaid-item">Reduce the severity of injuries</div>
+            <div class="firstaid-item">Save lives before professional help arrives</div>
+            <div class="firstaid-item">Stay calm and take control during a crisis</div>
+        </div>
+    </div>
+    <div id="cprDetails" class="info-box" style="display: none;">
+    <h3>❤️ CPR Instructions</h3>
+    <p class="details">1. Check responsiveness.<br>
+       2. Call 108 immediately.<br>
+       3. Start chest compressions at 100–120 per minute.<br>
+       4. Continue until help arrives.</p>
+         <button class="hide" onclick="hideBox('cprDetails')">Hide</button>
+</div>
+
+<div id="kitDetails" class="info-box" style="display: none;">
+    <h3>💊 Medicine Kit Checklist</h3>
+    <ul>
+        <li>Bandages</li>
+        <li>Antiseptic</li>
+        <li>Cotton</li>
+        <li>Painkillers</li>
+        <li>Scissors</li>
+    </ul>
+    <button class="hide" onclick="hideBox('kitDetails')">Hide</button>
+</div>
+<div id="flashlightBox" class="info-box" style="display: none;">
+    <h3>🔦 Flashlight Feature</h3>
+    <p>This feature is currently unavailable in browsers, but in a real app, it would turn on the mobile flashlight.</p>
+    <button class="hide" onclick="hideBox('flashlightBox')">Hide</button>
+</div>
+
+<div id="locationBox" class="info-box" style="display: none;">
+    <h3>📍 Send Location</h3>
+    <p>This feature would share your real-time location with emergency contacts. Requires device GPS access.</p>
+    <button class="hide" onclick="hideBox('locationBox')">Hide</button>
+</div>
+
+<div id="fireTipsBox" class="info-box" style="display: none;">
+    <h3>🧯 Fire Safety Tips</h3>
+    <ul>
+        <li>Stop, Drop, and Roll if on fire</li>
+        <li>Stay low to avoid smoke</li>
+        <li>Use a fire extinguisher if safe</li>
+        <li>Evacuate immediately and call 101</li>
+    </ul>
+    <button class="hide" onclick="hideBox('fireTipsBox')">Hide</button>
+</div>
+    <div class="emergency-buttons">
+    <button onclick="alert('Dialing emergency services...')">📞 Call Ambulance</button>
+    <button onclick="window.open('https://www.google.com/maps/search/hospital+near+me')">📍 Locate Nearest Hospital</button>
+    <button onclick="window.location.href='guide.html'">🩹 First Aid Guide</button>
+    <button onclick="showCPR()">❤️ CPR Instructions</button>
+    <button onclick="showKit()">💊 Check Medicine Kit</button>
+    <button onclick="showExitPlan()">🚪 Emergency Exit Plan</button>
+    <button onclick="showFlashlight()">🔦 Activate Flashlight</button>
+    <button onclick="playAlarm()">🔔 Sound Alarm</button>
+    <button onclick=" showLocation() ">📷 Send Location</button>
+    <button onclick="showFireTips()">🧯 Fire Safety Tips</button>
+</div>
+  <footer>
+    <p>© 2025 Online First Aid Assistant | Designed by Ben-Vencher</p>
+  </footer>
+<script src="/static/js/emergency.js"></script>
+</body>
+</html>

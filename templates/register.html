@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/register.css">
+</head>
+<body>
+  <div class="form-wrapper">
+  <div class="left-panel">
+    <h2>General Information</h2>
+    <div class="form-row">
+      <input class="info" type="text" placeholder="First Name">
+      <input  class="info" type="text" placeholder="Last Name">
+    </div>
+    <input  class="info" type="text" placeholder="Date of Birth">
+    <input  class="info" type="text" placeholder="Blood Group">
+    <select>
+      <option selected disabled>Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="right-panel">
+    <h2>Contact Details</h2>
+    <form onsubmit="register(event)">
+    <input  class="info" type="text" placeholder="Username"id="username"  required>
+    <input  class="info" type="password" placeholder="Password" id="password" required>
+    <input  class="info" type="email" placeholder="Email" required>
+    <input  class="info" type="text" placeholder="Phone Number" required>
+    <label>
+      <input class="check" type="checkbox">
+      I accept the <a class="terms" href="#">Terms and Conditions</a>.
+    </label>
+    <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+<script src="/static/js/register.js"></script>
+</body>
+</html>
