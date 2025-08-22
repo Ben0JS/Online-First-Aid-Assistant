@@ -15,12 +15,16 @@ An interactive web-based application built with **HTML, CSS, and JavaScript** th
 - JavaScript (Vanilla JS)
 
 ## 📂 Project Structure
-- `index.html` → Home page  
+- `index.html` → Home page
+- `login.html` → Login page
+- `register.html` → Register page
 - `about.html` → About page  
 - `contact.html` → Contact page  
 - `emergency.html` → Emergency steps page  
-- `guide.html` → First aid guide page  
+- `guide.html` → First aid guide page 
 - `index.css` → Home page stylesheet
+- `login.css` → login page stylesheet
+- `register.css` → register page stylesheet
 - `about.css` → about page stylesheet
 - `contact.css` → contact page stylesheet
 - `emergency.css` → emergency page stylesheet
